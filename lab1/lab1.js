@@ -102,4 +102,3 @@ function calculate(a, b, c) {
   console.log(labInfo);
   console.log(solution);
 }
-console.log(calculate(5,5,5));

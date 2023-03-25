@@ -62,7 +62,7 @@ const testList = new MyList();
   testList.insert("c", 1); 
   testList.insert("d", 2); 
   assert.strictEqual(testList.length(), 4);
-  assert.strictEqual(testList.get(1), "broke test");
+  assert.strictEqual(testList.get(1), "c");
   assert.strictEqual(testList.get(2), "d");
   assert.strictEqual(testList.get(3), "b");
 }

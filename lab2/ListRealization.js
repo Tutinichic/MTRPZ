@@ -8,10 +8,16 @@ class MyList {
     }
   
     append(element) {
+      if (typeof element != "string") {
+        throw new Error("Помилочка, треба стрінг");
+      }
       this.myElements.push(element);
     }
   
     insert(element, index) {
+      if (typeof element != "string") {
+        throw new Error("Помилочка, треба стрінг");
+      }
       if (index < 0 || index > this.myElements.length) {
         throw new Error("Помилочка, некоректний індекс");
       }
@@ -26,6 +32,9 @@ class MyList {
     }
   
     deleteAll(element) {
+      if (typeof element != "string") {
+        throw new Error("Помилочка, треба стрінг");
+      }
       this.myElements = this.myElements.filter((currentElement) => currentElement !== element);
     }
   
@@ -47,10 +56,16 @@ class MyList {
     }
   
     findFirst(element) {
+      if (typeof element != "string") {
+        throw new Error("Помилочка, треба стрінг");
+      }
       return this.myElements.indexOf(element);
     }
   
     findLast(element) {
+      if (typeof element != "string") {
+        throw new Error("Помилочка, треба стрінг");
+      }
       return this.myElements.lastIndexOf(element);
     }
   

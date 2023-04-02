@@ -183,7 +183,7 @@ class MyList {
       output += currentElement.value + ' ';
       currentElement = currentElement.next;
     }
-    return output.slice(0, -1);
+    console.log(output.slice(0, -1));
   }
 }
 

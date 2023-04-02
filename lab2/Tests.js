@@ -212,6 +212,10 @@ const testList = new MyList();
   list2.append("2");
   list2.append("3");
   testList.extend(list2);
-  const extendedList = testList.extend(list2);
-  assert.deepStrictEqual(extendedList, ["a", "b", "1", "2", "3"]);
+  assert.strictEqual(testList.length(), 5);
+  assert.strictEqual(testList.get(0), "a");
+  assert.strictEqual(testList.get(1), "b");
+  assert.strictEqual(testList.get(2), "1");
+  assert.strictEqual(testList.get(3), "2");
+  assert.strictEqual(testList.get(4), "3");
 }
